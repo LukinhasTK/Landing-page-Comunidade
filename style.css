@@ -94,6 +94,48 @@ header {
 }
 /* HEADER */
 
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: linear-gradient(rgb(255, 166, 0), rgb(255, 94, 0));
+    padding: 5.5rem;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    gap: 2rem;
+}
+
+.right-side img {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 650px;
+}
+
+.welcome-title {
+    color: #f1f1f1;
+    font-size: clamp(2rem, 5vw, 4rem);
+    max-width: 400px;
+    font-weight: 400;
+    font-family: "Orbitron", sans-serif;
+}
+
+.welcome-description {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    max-width: 700px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+/* HERO */
+
 .slider {
     display: flex;
     justify-content: space-between;
@@ -241,48 +283,6 @@ header {
     background-color: transparent;
 }
 
-
-/* HERO */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 100vh;
-    background: linear-gradient(rgb(255, 166, 0), rgb(255, 94, 0));
-    padding: 5.5rem;
-}
-
-.left-side {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100%;
-    gap: 2rem;
-}
-
-.right-side img {
-    border-radius: 20px;
-    width: 100%;
-    max-width: 650px;
-}
-
-.welcome-title {
-    color: #f1f1f1;
-    font-size: clamp(2rem, 5vw, 4rem);
-    max-width: 400px;
-    font-weight: 400;
-    font-family: "Orbitron", sans-serif;
-}
-
-.welcome-description {
-    color: #f1f1f1;
-    font-size: 1.5rem;
-    max-width: 700px;
-    line-height: 40px;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
-}
-/* HERO */
 
 /* EVENTOS */
 .events {
@@ -643,7 +643,6 @@ header {
         flex-direction: column;
         align-items: center;
         margin: 5rem 0rem;
-        
     }
 
     .mobile-nav-menu,
@@ -667,7 +666,7 @@ header {
         align-items: center;
         flex-direction: column-reverse;
         gap: 2rem;
-        padding: 2rem 1.5rem;
+        padding: 6rem 1.5rem 2rem;
     }
 
     .welcome-title {
@@ -688,9 +687,9 @@ header {
         align-items: center;
     }
 
-    .community-img {
+    .right-side img  {
         width: 100%;
-        max-width: 300px;
+        max-width: 300px; 
     }
 
     /* HERO */
