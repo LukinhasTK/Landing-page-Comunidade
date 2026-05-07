@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidade Louvor & Adoração</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-
 <body>
+
     <!-- HEADER -->
     <header>
         <nav class="nav-container">
-            <a class="logo" href="#">
-                Comunidade Louvor & Adoração
+            <a href="#home">
+                <img class="logo" src="./assets/logo_comunidade_catolica.png" alt="Logo da comunidade">
             </a>
             <div class="pc-nav-menu">
                 <a href="#home">Home</a>
@@ -25,13 +24,15 @@
                 <a href="#project">Projetos</a>
                 <a href="#contact">Contato</a>
             </div>
-            <button class="donation">Doação</button>
+
+            <a href="#donate">
+                <button class="donation">Doação</button>
+            </a>
 
             <button class="mobile-btn">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
-
         <div class="mobile-menu">
             <div class="mobile-nav-menu">
                 <a href="#home">Home</a>
@@ -46,29 +47,96 @@
         <!-- HERO -->
         <section id="home" class="hero">
             <div class="left-side">
-                <h1 class="welcome-title">
-                    Bem-vindo à nossa Comunidade
-                </h1>
+                <h1 class="welcome-title">Bem-vindo à nossa Comunidade</h1>
+
                 <p class="welcome-description">
                     Seja bem-vindo! Aqui é um espaço de fé, amizade e crescimento.
                     Nossa comunidade vive para servir, aprender e levar esperança
                     através da música e da união.
                 </p>
             </div>
+
             <div class="right-side">
-                <img class="community-img" src="./assets/santuario-do-pai-das-misericordias_cancaonova.png"
+                <img class="community-img"
+                    src="./assets/santuario-do-pai-das-misericordias_cancaonova.png"
                     alt="imagem da comunidade">
-            </div>
             </div>
         </section>
         <!-- HERO -->
 
+        <!-- SLIDER -->
+        <section class="slider">
+            <div class="interface">
+
+                <div class="arrow-left">
+                    <button id="prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+
+                <div class="slider-container">
+                    <!-- SLIDE 1 -->
+                    <div class="slider-box active">
+                        <div class="slider-text">
+                            <h2 class="slider-title">Nossa Missão</h2>
+                            <p class="slider-description">
+                                "Adorar para Evangelizar, Anunciar e Testemunhar o Grande Amor de Deus..."
+                            </p>
+                        </div>
+                        <div class="slider-img active">
+                            <img src="./assets/fechada_capelinha.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 2 -->
+                    <div class="slider-box">
+                        <div class="slider-text">
+                            <h2 class="slider-title">Fundadores</h2>
+                            <p class="slider-description">
+                                "Adorar para Evangelizar, Anunciar e Testemunhar..."
+                            </p>
+                        </div>
+                        <div class="slider-img">
+                            <img src="./assets/fundadores_nilton_rosangela.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 3 -->
+                    <div class="slider-box">
+                        <div class="slider-text">
+                            <h2 class="slider-title">Nossos Valores</h2>
+                            <p class="slider-description">
+                                "Adorar para Evangelizar, Anunciar e Testemunhar..."
+                            </p>
+                        </div>
+                        <div class="slider-img">
+                            <img src="./assets/grupo_louvor.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow-right">
+                    <button id="next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="nav-btn">
+                    <div class="nav-btn-links active"></div>
+                    <div class="nav-btn-links"></div>
+                    <div class="nav-btn-links"></div>
+                </div>
+
+            </div>
+        </section>
+        <!-- SLIDER -->
+
         <!-- EVENTOS -->
         <section id="events" class="events">
-            <h2 class="event-title">
-                Eventos
-            </h2>
+            <h2 class="event-title">Eventos</h2>
+
             <div class="events-container">
+
                 <div class="card">
                     <p>27 Abril</p>
                     <p>Missa Dominical</p>
@@ -76,6 +144,7 @@
                     <p>19:00</p>
                     <p>Comunidade Louvor & Adoração</p>
                 </div>
+
                 <div class="card">
                     <p>01 Maio</p>
                     <p>Grupo de Oração</p>
@@ -83,6 +152,7 @@
                     <p>20:00</p>
                     <p>Comunidade Louvor & Adoração</p>
                 </div>
+
                 <div class="card">
                     <p>03 Maio</p>
                     <p>Louvor</p>
@@ -90,121 +160,122 @@
                     <p>15:00</p>
                     <p>Comunidade Louvor & Adoração</p>
                 </div>
+
             </div>
         </section>
         <!-- EVENTOS -->
 
         <!-- PROJETOS -->
         <section id="project" class="projects">
-            <h2 class="project-title">
-                Projetos
-            </h2>
+            <h2 class="project-title">Projetos</h2>
+
             <div class="projects-container">
+
                 <div class="project-card">
                     <div class="project-info">
                         <h3>Objetivo</h3>
-                        <p>
-                            Tornar o ensino musical acessível e despertar novos talentos.
-                        </p>
+                        <p>Tornar o ensino musical acessível.</p>
                     </div>
+
                     <div class="project-info">
                         <h3>Como funciona</h3>
-                        <p>
-                            Aulas semanais com professores voluntários para iniciantes.
-                        </p>
+                        <p>Aulas semanais com voluntários.</p>
                     </div>
+
                     <div class="project-info">
                         <h3>Estrutura</h3>
-                        <p>
-                            Espaço comunitário com instrumentos disponíveis para aprendizado.
-                        </p>
+                        <p>Espaço comunitário com instrumentos.</p>
                     </div>
                 </div>
 
                 <div class="project-middle">
                     <div class="project-img">
-                        <img class="active" src="./assets/IMG-20211223-WA0002.jpg" alt="img2">
-                        <img src="./assets/IMG-20211223-WA0003.jpg" alt="img3">
-                        <img src="./assets/IMG-20211223-WA0004.jpg" alt="img4">
-                        <img src="./assets/IMG-20211223-WA0005.jpg" alt="img5">
-                        <img src="./assets/IMG-20211223-WA0006.jpg" alt="img6">
-                        <img src="./assets/IMG-20211223-WA0007.jpg" alt="img7">
-                        <img src="./assets/IMG-20211223-WA0008.jpg" alt="img8">
-                        <img src="./assets/IMG-20211223-WA0009.jpg" alt="img9">
+                        <img class="active" src="./assets/IMG-20211223-WA0002.jpg" alt="">
+                        <img src="./assets/IMG-20211223-WA0003.jpg" alt="">
+                        <img src="./assets/IMG-20211223-WA0004.jpg" alt="">
+                        <img src="./assets/IMG-20211223-WA0005.jpg" alt="">
+                        <img src="./assets/IMG-20211223-WA0006.jpg" alt="">
+                        <img src="./assets/IMG-20211223-WA0007.jpg" alt="">
+                        <img src="./assets/IMG-20211223-WA0008.jpg" alt="">
+                        <img src="./assets/IMG-20211223-WA0009.jpg" alt="">
                     </div>
+
                     <a class="btn-donate" href="#donate">Quero Ajudar</a>
                 </div>
+
                 <div class="project-description">
                     <p>
-                        Este projeto tem como objetivo oferecer aulas gratuitas de música
-                        para pessoas de todas as idades, especialmente para aqueles que não
-                        têm condições de pagar.
-
-                        Com a ajuda de professores voluntários, queremos criar um espaço
-                        de aprendizado, acolhimento e desenvolvimento dentro da nossa comunidade.
-
-                        Para que isso se torne realidade, contamos com a sua ajuda.
+                        Projeto para oferecer aulas gratuitas de música para todas as idades.
                     </p>
                 </div>
+
             </div>
         </section>
         <!-- PROJETOS -->
 
-        <!-- CONTATOS -->
+        <!-- CONTATO -->
         <section class="contacts" id="contact">
             <h2 class="contacts-title">
                 Nossos <br>
                 <span>contatos</span>
             </h2>
+
             <div class="contacts-container">
                 <div class="contact-links">
-                    <p>
+
+                    <a href="https://maps.app.goo.gl/wvqq9dqbXtXdn13b7">
                         <i class="fa-solid fa-location-dot"></i>
-                        <a href="https://maps.app.goo.gl/ZnmCL8SDnuqM1eys7">Comunidade Louvor & Adoração</a>
-                    </p>
-
-                    <a href="https://wa.me/554796623255?text=Olá,%20quero%20saber%20mais%20sobre%20a%20comunidade">
-
-                        <i class="fa-brands fa-whatsapp"></i>
-                        WhatsApp
-
+                        Comunidade Louvor & Adoração
                     </a>
 
-                    <a href="https://mail.google.com/mail/?view=cm&to=contato@email.com" target="_blank">
+                    <a href="https://wa.me/554796623255?text=Olá,%20quero%20saber%20mais%20sobre%20a%20comunidade">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
 
+                    <a href="mailto:cclouvoreadoracao@gmail.com?subject=Contato%20pelo%20site&body=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20comunidade!">
                         <i class="fa-solid fa-envelope"></i>
                         contato@email.com
                     </a>
+
                 </div>
             </div>
         </section>
-        <!-- CONTATOS -->
+        <!-- CONTATO -->
 
         <!-- DOAÇÃO -->
         <section id="donate" class="donates">
+
             <div class="donate-left-side">
-                <h2 class="donate-title">
-                    Apoie nossa comunidade
-                </h2>
+                <h2 class="donate-title">Apoie nossa comunidade</h2>
 
                 <p class="donate-description">
-                    Sua doação ajuda a manter nossos projetos,
-                    atividades e ações que impactam vidas todos os dias.
+                    Sua doação ajuda a manter nossos projetos.
                 </p>
             </div>
 
             <div class="donate-right-side">
-                <img class="img-logo" src="./assets/santuario-do-pai-das-misericordias_cancaonova.png" alt="logo">
+                <img class="img-logo"
+                    src="./assets/santuario-do-pai-das-misericordias_cancaonova.png"
+                    alt="logo">
+
                 <div class="donate-middle-side">
-                <img class="qr-code" src="./assets/qr-code-selfie-du-macaque.png" alt="QR Code Pix">
-                <p class="pix-key" onclick="copiarpix()">
-                    email@pix.com
-                </p>
+                    <img class="qr-code"
+                        src="./assets/qr-code-selfie-du-macaque.png"
+                        alt="QR Code Pix">
+
+                    <p class="pix-key" onclick="copiarpix()">
+                        email@pix.com
+                    </p>
                 </div>
             </div>
+
         </section>
         <!-- DOAÇÃO -->
+
     </main>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
