@@ -35,6 +35,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 99;
 }
 
 .nav-container a {
@@ -42,8 +43,8 @@ header {
 }
 
 .logo {
-    color: #f1f1f1;
-    font-size: 2rem;
+    width: 100%;
+    max-width: 180px;
     font-family: "Orbitron", sans-serif;
 }
 
@@ -56,10 +57,12 @@ header {
     color: #f1f1f1;
     font-size: 1.3rem;
     font-family: "Poppins", sans-serif;
+    transition: .3s ease;
 }
 
-.pc-nav-menu.active a {
-    border-bottom: 3px solid #411e10;
+.pc-nav-menu a:hover {
+    color:#411e10;
+
 }
 
 .donation {
@@ -78,6 +81,10 @@ header {
     background-color: #7e3b21e3;
 }
 
+.donation:active {
+    opacity: 0.7;
+}
+
 .mobile-btn {
     display: none;
 }
@@ -86,6 +93,154 @@ header {
     display: none;
 }
 /* HEADER */
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 4%;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100%;
+    width: 100%;
+}
+
+.slider-title {
+    color: #f1f1f1;
+    font-size: clamp(2rem, 5vw, 4rem);
+    max-width: 400px;
+    font-weight: 400;
+    font-family: "Orbitron", sans-serif;
+}
+
+.slider-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@keyframes textsAnimation {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.slider-box.active h2, .slider-box.active p {
+    transform: translateY(60px);
+    opacity: 0;
+    animation: textsAnimation .5s ease-in-out .4s forwards;
+}
+
+@keyframes imagesAnimation {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slider-box.active .slider-img {
+    transform: translateY(60px);
+    opacity: 0;
+    animation: imagesAnimation .5s ease-in-out .4s forwards;
+}
+
+.slider-description {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    max-width: 700px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+
+.slider-container img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 20px;
+    height: 400px;
+}
+
+.slider-img .img-foundations {
+    width: 100%;
+    max-width: 650px;
+}
+
+.slider-box.active {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    width: 100%;
+    padding: 4rem;
+}
+
+.slider-box {
+    display: none;
+    
+}
+
+.arrow-left {
+    position: absolute;
+    left: 1%;
+}
+
+.arrow-right {
+    position: absolute;
+    right: 2%;
+}
+
+#prev, #next {
+    cursor: pointer;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 50px;
+    background-color: #411e10;
+    color: #f1f1f1;
+}
+
+.nav-btn {
+    display: flex;
+    gap: 0.8rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+}
+
+.nav-btn-links{
+    border: #f1f1f1 1px solid;
+    width: 30px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #5e2c18e3;
+    cursor: pointer;
+}
+
+.nav-btn-links.active {
+    border: #f1f1f1 1px solid;
+    width: 30px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #5e2c18e3;
+    cursor: pointer; 
+    background-color: transparent;
+}
+
 
 /* HERO */
 .hero {
@@ -255,6 +410,10 @@ header {
     color: #411e10;
 }
 
+.btn-donate:active {
+    opacity: 0.7;
+}
+
 .project-img img {
     width: 100%;
     max-width: 650px;
@@ -278,6 +437,7 @@ header {
     font-family: "Poppins", sans-serif;
     max-width: 400px;
     line-height: 40px;
+    text-align: center;
 }
 /* PROJETOS */
 
@@ -333,6 +493,11 @@ header {
     color: #f1f1f1;
     font-size: 2rem;
     font-family: "Poppins", sans-serif;
+
+}
+
+.contact-links a:active {
+    opacity: 0.7;
 }
 
 .contact-links a,
@@ -458,7 +623,7 @@ header {
 
     .logo {
         font-size: 1rem;
-        max-width: 200px;
+        max-width: 90px;
     }
 
     .mobile-btn {
@@ -467,6 +632,10 @@ header {
         background-color: transparent;
         font-size: 1.5rem;
         cursor: pointer;
+    }
+
+    .mobile-btn i {
+        color: #f1f1f1;
     }
 
     .mobile-menu.active {
@@ -484,6 +653,10 @@ header {
         flex-direction: column;
         color: #f1f1f1;
         text-align: center;
+    }
+
+    .mobile-nav-menu a:hover {
+       color: #5e2c18e3;
     }
 
     /* HEADER */
@@ -522,6 +695,38 @@ header {
 
     /* HERO */
 
+    /* SOBRE NÓS */
+
+.slider-box.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.slider-description {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.slider-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.slider-img img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+    /* SOBRE NÓS */
+
     /* EVENTOS */
     .events {
         display: flex;
@@ -552,7 +757,6 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
     }
 
     .project-title {
@@ -579,7 +783,7 @@ header {
         flex-direction: column;
         font-size: 1rem;
         text-align: center;
-
+        padding: 1rem;
     }
 
     .project-info {
@@ -588,7 +792,6 @@ header {
         align-items: center;
         font-size: 1rem;
         text-align: center;
-        gap: 1.5rem;
         color: #f1f1f1;
     }
 
@@ -599,6 +802,10 @@ header {
         align-items: center;
     }
 
+    .project-img {
+        min-height: 150px !important;
+    }
+
     .project-img img {
         width: 100%;
         max-width: 300px;
@@ -606,6 +813,10 @@ header {
 
     .btn-donate {
         font-size: 1rem;
+    }
+
+    .btn-donate:active {
+        opacity: 0.7;
     }
 
     .project-description {
@@ -655,6 +866,11 @@ header {
         font-size: 1rem;
         display: flex;
     }
+
+    .contact-links a:active {
+        opacity: 0.7;
+    }
+
     /* NOSSOS CONTATOS */
 
     /* DOAÇÕES */
@@ -678,6 +894,7 @@ header {
     .donate-description {
         font-size: 1rem;
         text-align: center;
+        
     }
 
     .donate-right-side {
@@ -690,6 +907,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 2rem;
     }
     /* DOAÇÕES */
 }
