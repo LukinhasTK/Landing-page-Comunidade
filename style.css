@@ -667,7 +667,7 @@ header {
         align-items: center;
         flex-direction: column-reverse;
         gap: 2rem;
-        padding: 4rem 1.5rem;
+        padding: 2rem 1.5rem;
     }
 
     .welcome-title {
