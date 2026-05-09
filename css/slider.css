@@ -1,0 +1,147 @@
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 4%;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.slider-title {
+    color: #f1f1f1;
+    font-size: clamp(2rem, 5vw, 4rem);
+    max-width: 600px;
+    font-weight: 400;
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+}
+
+.slider-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@keyframes textsAnimation {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.slider-box.active h2, .slider-box.active li, .slider-box.active p {
+    transform: translateY(60px);
+    opacity: 0;
+    animation: textsAnimation .5s ease-in-out .4s forwards;
+}
+
+@keyframes imagesAnimation {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slider-box.active .slider-img {
+    transform: translateY(60px);
+    opacity: 0;
+    animation: imagesAnimation .5s ease-in-out .4s forwards;
+}
+
+.slider-description {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    max-width: 700px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+
+.slider-container img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 20px;
+    height: 400px;
+}
+
+.slider-img .img-foundations {
+    width: 100%;
+    max-width: 650px;
+}
+
+.slider-box.active {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    width: 100%;
+    padding: 4rem;
+}
+
+.slider-box {
+    display: none;
+    
+}
+
+.arrow-left {
+    position: absolute;
+    left: 1%;
+}
+
+.arrow-right {
+    position: absolute;
+    right: 2%;
+}
+
+#prev, #next {
+    cursor: pointer;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 50px;
+    background-color: #411e10;
+    color: #f1f1f1;
+}
+
+.nav-btn {
+    display: flex;
+    gap: 0.8rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+}
+
+.nav-btn-links{
+    border: #f1f1f1 1px solid;
+    width: 30px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #5e2c18e3;
+    cursor: pointer;
+}
+
+.nav-btn-links.active {
+    border: #f1f1f1 1px solid;
+    width: 30px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #5e2c18e3;
+    cursor: pointer; 
+    background-color: transparent;
+}
