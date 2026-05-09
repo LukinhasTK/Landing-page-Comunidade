@@ -1,0 +1,336 @@
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1170px) {
+
+    /* HEADER */
+
+    header {
+        width: 100%;
+        padding: 10px 4%;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .pc-nav-menu .donation {
+        display: none;
+    }
+
+    .logo {
+        font-size: 1rem;
+        max-width: 90px;
+    }
+
+    .mobile-btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .mobile-btn i {
+        color: #f1f1f1;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        margin: 5rem 0rem;
+    }
+    
+    .mobile-nav-menu,
+    a {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        color: black;
+        text-align: center;
+    }
+
+    .mobile-nav-menu a:hover {
+       color: #5e2c18e3;
+    }
+    /* HEADER */
+
+    /* HERO */
+    .hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+    min-height: 50vh;
+    padding: 4rem 1rem;
+}
+
+    .welcome-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .welcome-description {
+        text-align: center;
+        font-size: 1rem;
+        max-width: 400px;
+    }
+
+    .right-side {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-side img  {
+        width: 100%;
+        max-width: 300px; 
+    }
+    /* HERO */
+}
+
+.slider-box.active {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.slider-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.slider-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.slider-description li {
+    text-align: center;
+    max-width: 320px;
+    font-size: 0.85rem;
+}   
+
+.slider-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.slider-img img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+    /* SOBRE NÓS */
+
+    /* EVENTOS */
+    .events {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        min-height: 100dvh;
+    }
+
+    .event-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .events-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card {
+        text-align: center;
+    }
+
+    /* EVENTOS */
+
+    /* PROJETOS */
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100dvh;
+    }
+
+    .project-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .projects-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 1.5rem 1rem;
+        gap: 2rem;
+    }
+
+    .project-card p {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .project-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        text-align: center;
+        color: #f1f1f1;
+    }
+
+    .project-middle {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-img {
+        min-height: 150px !important;
+    }
+
+    .project-img img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .btn-donate {
+        font-size: 1rem;
+    }
+
+    .btn-donate:active {
+        opacity: 0.7;
+    }
+
+    .project-description {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .project-description p {
+        font-size: 1rem;
+        max-width: 100%;
+        line-height: 1.6;
+        text-align: center;
+    }
+    /* PROJETOS */
+
+    /* NOSSOS CONTATOS */
+    .contacts {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100dvh;
+    }
+
+    .contacts-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contacts-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-links p {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .contact-links a {
+        font-size: 1rem;
+        display: flex;
+    }
+
+    .contact-links a:active {
+        opacity: 0.7;
+    }
+
+    /* NOSSOS CONTATOS */
+
+    /* DOAÇÕES */
+    .donates {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 50dvh;
+        gap: 2rem;
+    }
+
+    .donate-left-side {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .donate-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .donate-description {
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+
+    .donate-right-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .donate-right-side img {
+        width: 100%;
+        border-radius: 20px;
+        max-width: 300px;
+    }
+
+    .donate-middle-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .pix-key {
+    font-size: 1rem;
+    color: #f1f1f1;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    /* DOAÇÕES */
+
+/* RESPONSIVIDADE */
