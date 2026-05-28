@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comunidade Louvor & Adoração</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="pc-nav-menu">
+        <a href="#home">
+          <img
+            class="logo"
+            src="./assets/logo_comunidade_catolica.png"
+            alt="Logo da Comunidade Católica Louvor e Adoração"
+          />
+        </a>
+        <ul class="menu-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#event">Eventos</a></li>
+          <li><a href="#project">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+
+        <a href="#donate" class="donation"> Doação </a>
+
+        <button class="mobile-btn" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </nav>
+
+      <div class="mobile-menu">
+        <div class="mobile-nav-menu">
+          <a href="#home">Home</a>
+          <a href="#event">Eventos</a>
+          <a href="#project">Projetos</a>
+          <a href="#contact">Contato</a>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER -->
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero">
+        <div class="left-side">
+          <h1 class="welcome-title">Bem-vindo à nossa Comunidade</h1>
+
+          <p class="welcome-description">
+            Seja bem-vindo! Aqui é um espaço de fé, amizade e crescimento. Nossa
+            comunidade vive para servir, aprender e levar esperança através da
+            música e da união.
+          </p>
+        </div>
+
+        <div class="right-side">
+          <img
+            src="./assets/fechada_capelinha.png"
+            alt="Capela da Comunidade Louvor e Adoração"
+          />
+        </div>
+      </section>
+      <!-- HERO -->
+
+      <!-- SLIDER -->
+      <section class="slider">
+        <div class="interface">
+          <div class="arrow-left">
+            <button id="prev" aria-label="Slider Anterior">
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <div class="slider-container">
+            <!-- SLIDE 1 -->
+            <div class="slider-box active">
+              <div class="slider-text">
+                <h2 class="slider-title">Nossa Missão</h2>
+
+                <p class="slider-description">
+                  "Adorar para Evangelizar, Anunciar e Testemunhar o Grande Amor
+                  de Deus, com ardor missionário e servindo com amor os mais
+                  necessitados."
+                </p>
+              </div>
+              <div class="slider-img active">
+                <img
+                  src="./assets/fechada_capelinha.png"
+                  alt="Capela da Comunidade Louvor e Adoração"
+                />
+              </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="slider-box">
+              <div class="slider-text">
+                <h2 class="slider-title">Fundadores</h2>
+                <p class="slider-description">
+                  Os fundadores Nilton e Rosângela iniciaram a comunidade
+                  movidos pela fé e pelo desejo de servir. Com experiência no
+                  louvor e na vida pastoral, eles dedicaram suas vidas à
+                  evangelização e ao acolhimento de pessoas através da oração e
+                  da música
+                </p>
+              </div>
+              <div class="slider-img">
+                <img
+                  src="./assets/fundadores_nilton_rosangela.png"
+                  alt="Foto dos fundadores Nilton e Rosângela"
+                />
+              </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="slider-box">
+              <div class="slider-text">
+                <h2 class="slider-title">Nossos Valores</h2>
+                <ul class="slider-description">
+                  <li>Adoração a Deus em primeiro lugar</li>
+                  <li>Vida de oração e intimidade com Deus</li>
+                  <li>Evangelizar com ardor e verdade</li>
+                  <li>Alegria no servir e no anunciar</li>
+                  <li>Amor ao próximo</li>
+                  <li>Acolhimento fraterno</li>
+                  <li>Unidade e comunhão</li>
+                  <li>Serviço com humildade</li>
+                  <li>Compromisso com a dignidade humana</li>
+                </ul>
+              </div>
+              <div class="slider-img">
+                <img
+                  src="./assets/nossos_valores.png"
+                  alt="Altar da comunidade com velas acesas"
+                />
+              </div>
+            </div>
+
+            <!-- SLIDE 4 -->
+            <div class="slider-box">
+              <div class="slider-text">
+                <h2 class="slider-title">Nossa Visão</h2>
+                <p class="slider-description">
+                  "Ser uma comunidade viva, orante e missionária, reconhecida
+                  pelo louvor, pela adoração e pelo serviço ao próximo,
+                  transformando vidas e sendo sinal do amor de Deus na Igreja e
+                  na sociedade."
+                </p>
+              </div>
+              <div class="slider-img">
+                <img
+                  src="./assets/nossa_visão.png"
+                  alt="Interior da capelinha da comunidade"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="arrow-right">
+            <button id="next" aria-label="Próximo Slide">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <div class="nav-btn">
+            <div class="nav-btn-links active"></div>
+            <div class="nav-btn-links"></div>
+            <div class="nav-btn-links"></div>
+            <div class="nav-btn-links"></div>
+          </div>
+        </div>
+      </section>
+      <!-- SLIDER -->
+
+      <!-- EVENTOS -->
+      <section id="event" class="events">
+        <h2 class="event-title">Eventos</h2>
+
+        <div class="events-container">
+          <div class="card">
+            <p>27 Abril</p>
+            <p>Missa Dominical</p>
+            <p>Celebração semanal</p>
+            <p>19:00</p>
+            <p>Comunidade Louvor & Adoração</p>
+          </div>
+
+          <div class="card">
+            <p>01 Maio</p>
+            <p>Grupo de Oração</p>
+            <p>Momento de louvor e oração</p>
+            <p>20:00</p>
+            <p>Comunidade Louvor & Adoração</p>
+          </div>
+
+          <div class="card">
+            <p>03 Maio</p>
+            <p>Louvor</p>
+            <p>Encontro com os catequizandos</p>
+            <p>15:00</p>
+            <p>Comunidade Louvor & Adoração</p>
+          </div>
+        </div>
+      </section>
+      <!-- EVENTOS -->
+
+      <!-- PROJETOS -->
+      <section id="project" class="projects">
+        <h2 class="project-title">Projetos</h2>
+
+        <div class="projects-container">
+          <div class="project-card">
+            <div class="project-info">
+              <h3>Objetivo</h3>
+              <p>Tornar o ensino musical acessível.</p>
+            </div>
+
+            <div class="project-info">
+              <h3>Como funciona</h3>
+              <p>Aulas semanais com voluntários.</p>
+            </div>
+
+            <div class="project-info">
+              <h3>Estrutura</h3>
+              <p>Espaço comunitário com instrumentos.</p>
+            </div>
+          </div>
+
+          <div class="project-middle">
+            <div class="project-img">
+              <img
+                class="active"
+                src="./assets/IMG-20211223-WA0002.jpg"
+                alt="Imagem do projeto"
+              />
+              <img
+                src="./assets/IMG-20211223-WA0003.jpg"
+                alt="Imagem do projeto"
+              />
+              <img
+                src="./assets/IMG-20211223-WA0004.jpg"
+                alt="Imagem do projeto"
+              />
+              <img
+                src="./assets/IMG-20211223-WA0005.jpg"
+                alt="Imagem do projeto"
+              />
+              <img
+                src="./assets/IMG-20211223-WA0006.jpg"
+                alt="Imagem do projeto"
+              />
+              <img
+                src="./assets/IMG-20211223-WA0007.jpg"
+                alt="Imagem do projeto"
+              />
+              <img
+                src="./assets/IMG-20211223-WA0008.jpg"
+                alt="Imagem do projeto"
+              />
+              <img
+                src="./assets/IMG-20211223-WA0009.jpg"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <a class="btn-donate" href="#donate">Quero Ajudar</a>
+          </div>
+
+          <div class="project-description">
+            <p>
+              Projeto para oferecer aulas gratuitas de música para todas as
+              idades.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- PROJETOS -->
+
+      <!-- CONTATO -->
+      <section class="contacts" id="contact">
+        <h2 class="contacts-title">
+          Nossos <br />
+          <span>contatos</span>
+        </h2>
+
+        <div class="contacts-container">
+          <div class="contact-links">
+            <a href="https://maps.app.goo.gl/wvqq9dqbXtXdn13b7">
+              <i class="fa-solid fa-location-dot"></i>
+              Comunidade Louvor & Adoração
+            </a>
+
+            <a
+              href="https://wa.me/554796623255?text=Olá,%20quero%20saber%20mais%20sobre%20a%20comunidade"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              WhatsApp
+            </a>
+
+            <a
+              href="mailto:cclouvoreadoracao@gmail.com?subject=Contato%20pelo%20site&body=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20comunidade!"
+            >
+              <i class="fa-solid fa-envelope"></i>
+              contato@email.com
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- CONTATO -->
+
+      <!-- DOAÇÃO -->
+      <section id="donate" class="donates">
+        <div class="donate-left-side">
+          <h2 class="donate-title">Apoie nossa comunidade</h2>
+
+          <p class="donate-description">
+            Sua doação ajuda a manter nossos projetos.
+          </p>
+        </div>
+
+        <div class="donate-right-side">
+          <img
+            src="./assets/fechada_capelinha.png"
+            alt="Capela da Comunidade Louvor e Adoração"
+          />
+          <div class="donate-middle-side">
+            <div class="qr-container">
+              <img
+                class="qr-code"
+                src="./assets/Pix da Comunidade.jpeg"
+                alt="QR Code Pix"
+              />
+              <p>Escaneie o QR Code pelo app do seu banco</p>
+            </div>
+            <button id="pixKey" aria-label="Copiar chave Pix">
+              <p>27.863.804/0001-70</p>
+              <p id="msg"></p>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- DOAÇÃO -->
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

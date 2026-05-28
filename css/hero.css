@@ -1,0 +1,42 @@
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: linear-gradient(rgb(255, 166, 0), rgb(255, 94, 0));
+    padding: 5.5rem;
+    
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    gap: 2rem;
+}
+
+.right-side img {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 650px;
+}
+
+.welcome-title {
+    color: #f1f1f1;
+    font-size: clamp(2rem, 5vw, 4rem);
+    max-width: 400px;
+    font-weight: 400;
+    font-family: "Orbitron", sans-serif;
+}
+
+.welcome-description {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    max-width: 700px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+/* HERO */

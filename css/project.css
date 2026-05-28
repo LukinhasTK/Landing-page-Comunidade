@@ -1,0 +1,111 @@
+/* PROJETOS */
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.project-title {
+    color: #f1f1f1;
+    font-size: 3.5rem;
+    font-family: "Orbitron", sans-serif;
+    padding: 2rem 0rem;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    min-height: 500px;
+    background-color: #5e2c18e3;
+    border-radius: 20px;
+    gap: 4rem;
+}
+
+.project-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    font-family: "Poppins", sans-serif;
+    padding: 7rem 2rem;
+}
+
+.project-info {
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project-card p {
+    font-size: 1.5rem;
+    color: #f1f1f1;
+}
+
+.project-img {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.project-middle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    gap: 2.5rem;
+}
+
+.btn-donate {
+    border: none;
+    color: #f1f1f1;
+    padding: 1rem 1.5rem;
+    background-color: orange;
+    border-radius: 50px;
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    transition: 0.5s ease;
+}
+
+.btn-donate:hover {
+    color: #411e10;
+}
+
+.btn-donate:active {
+    opacity: 0.7;
+}
+
+.project-img img {
+    width: 100%;
+    max-width: 650px;
+    position: absolute;
+    border-radius: 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.project-img img.active {
+    opacity: 1;
+}
+
+.project-description {
+    width: 30%;
+}
+
+.project-description p {
+    font-size: 1.5rem;
+    color: #f1f1f1;
+    font-family: "Poppins", sans-serif;
+    max-width: 400px;
+    line-height: 40px;
+    text-align: center;
+}
+/* PROJETOS */
