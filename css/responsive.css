@@ -82,7 +82,7 @@
     flex-direction: column-reverse;
     gap: 1.5rem;
     min-height: 50vh;
-    padding: 4rem 1rem;
+    padding: 8rem 1rem 4rem;
   }
 
   .welcome-title {
