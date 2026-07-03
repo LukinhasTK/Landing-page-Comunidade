@@ -273,9 +273,14 @@
   }
 
   .contact-links {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
     align-items: center;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 30px;
   }
 
   .contact-links p {
